@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a8242fb-f3d0-4413-920e-974475220029" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jobs/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobs/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jobs/templates/jobs/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/jobs/templates/jobs/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/urls.py" afterDir="false" />
-    </list>
+    <list default="true" id="2a8242fb-f3d0-4413-920e-974475220029" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,16 +176,15 @@
       <workItem from="1561309273866" duration="4110000" />
       <workItem from="1561366124814" duration="6413000" />
       <workItem from="1561391594912" duration="2070000" />
-      <workItem from="1561397859383" duration="3320000" />
+      <workItem from="1561397859383" duration="3597000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34358000" />
+    <option name="totallyTimeSpent" value="34635000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2803838" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
