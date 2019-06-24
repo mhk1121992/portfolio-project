@@ -1,7 +1,6 @@
 
 <!doctype html>
 <html lang="en">
-
 <head>
     {% load staticfiles %}
     <meta charset="utf-8">
@@ -9,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
-    <title>Mahdi Hasan Khan</title>
+    <title>Mahdi's Blog</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
 
@@ -35,7 +34,7 @@
     </style>
 
 </head>
-<body style="background: #212529">
+<body>
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="{% url 'home' %}">Mahdi Hasan Khan</a>
@@ -46,7 +45,7 @@
             <div class="navbar-nav ml-auto">
                 <a class="nav-item nav-link" href="https://twitter.com/t_hasan47">Twitter</a>
                 <a class="nav-item nav-link" href="{% static 'SampleResue.pdf' %}">Resume</a>
-                <a class="nav-item nav-link" href="{% url 'allblogs' %}">Blog</a>
+                <a class="nav-item nav-link active" href="{% url 'allblogs' %}">Blog</a>
             </div>
         </div>
     </nav>
@@ -54,42 +53,32 @@
 </header>
 
 <main role="main">
+    <div class="container">
+        <h1 class="text-center pt-3">Welcome to Mahdi's Blog</h1>
+        <br />
+        <br />
+        <h2>Recent Posts</h2>
+        <hr />
+        <div class="row">
+        {% for blog in blog.all %}
+            <div class="col-md-4">
 
-    <section class="jumbotron text-center" style="background: snow; margin-bottom: 0px;">
-        <div class="container" style="background: snow">
-            <h1 class="jumbotron-heading"><span style="font-weight: bold; color: #FF3D5E; font-size: 150px;">HELLO</span> <br/> <span style="font-weight: bold; color: #FF3D7E; font-size: 85px;">I'M MAHDI</span></h1>
-            <p class="lead text-muted" style="font-size: 40px">I'M A CREATIVE WEB DEVELOPER</p>
-            <p>
-                <a href="mailto:mhk1121992@gmail.com" class="btn btn-primary my-2">Email Me</a>
+                <a href="{% url 'detail' blog.id %}"><h3>{{ blog.title }}</h3></a>
+                <p>{{ blog.pub_date_new }}</p>
 
-            </p>
-            <img src="{% static 'profile_pic.jpg'%}" height="400px" width="400px"/>
-        </div>
-    </section>
-
-    <div class="album py-5" style="background: snow">
-        <div class="container">
-
-            <div class="row">
-
-            {% for job in jobs.all %}
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img class="card-img-top" src="{{ job.image.url }}" />
-                        <div class="card-body">
-                            <p class="card-text">{{ job.summary }}</p>
-                        </div>
-                    </div>
-                </div>
-            {% endfor %}
-
+                <br/>
+                <img class="img-fluid" src="{{ blog.image.url }}" />
+                <br/>
+                <p>{{ blog.summary }}</p>
+                <br/>
             </div>
+
+        {% endfor %}
         </div>
     </div>
-
 </main>
 
-<footer class="text-muted" style="background: #212529">
+<footer class="text-muted">
     <div class="container text-center">
         <p>&copyCopyright Mahdi Hasan Khan {% now "Y" %}</p>
     </div>
